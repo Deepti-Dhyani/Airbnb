@@ -1,0 +1,114 @@
+
+   
+    <style>
+      h1{
+        
+        margin: 2rem 5rem 0 5rem;
+        color: #7b272c;
+        border:none;
+        text-align: center;
+        box-shadow: 0px 0px 28px rgba(255 ,000,000,0.7);
+
+      }
+    .front-page {
+        background-color: rgb(50, 166, 129);
+        color: #fff;
+        border: none;
+        width: 1020px;
+        height: 150px;
+        border: 2px solid rgb(9, 42, 37);
+        border-radius: 2rem;
+        margin: 1rem 0 0 1rem;
+        padding: 0 3rem 0 15rem;
+        text-align: center;
+    } 
+    .front-page p{
+      padding-right: 8rem;
+      font-size: 1.3rem;
+    }
+    #start{
+        border-radius: 2rem;
+        margin-top: 2rem;
+        margin-left: 38rem;
+        background-color: rgb(59, 79, 230);
+        color: white;
+        height: 3rem;
+        align-items: center;
+        font-size: 1.3rem;
+        border: 1px solid black;
+    }
+    
+        .slider {
+  width: 100%;
+  overflow: hidden; 
+}
+
+.slides {
+  display: flex; 
+  transition: transform 0.5s ease; 
+}
+
+.slides img {
+    border: 2px solid black;
+    border-radius: 2rem;
+  width: 100%;
+  margin-top: 2rem; 
+
+  
+}
+
+@media  only screen and (max-width: 455px) {
+  .slides {
+     flex-direction: column;
+  }
+  .front-page{
+    width:12rem;
+    height:8rem;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-left: 2rem;
+    margin-left: 6rem;
+    }
+    #start{
+      margin-left: 10rem;
+    }
+}
+@media  only screen and (min-width: 750px) {
+  .slides {
+     flex-direction: row;
+  }
+  .front-page{
+    width:28rem;
+    height:12rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+    margin-left: 23rem;
+    }
+    #start{
+      margin-left: 34rem;
+    }
+}
+    
+    </style>
+<h1>Welcome to Wanderlust</h1>
+    <div class="slider">
+        <div class="slides">
+          <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+          <img src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+          <img src="https://images.pexels.com/photos/376531/pexels-photo-376531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+        </div>
+      </div>
+      
+    <div class="front-page">
+        <p class="paragraph"></p>Airbnb offers a wide range of accommodations,<br> including entire homes/apartments,<br> private rooms, and shared rooms. <br> Hosts can list various types of properties,<br> from cozy cabins and beachfront villas to urban lofts and countryside cottages.</p>
+    </div>
+  
+      <div class="btn-started">
+        <button class="btn btn-dark" id="start"> Get Started>></button>
+    </div>  
+        <script>
+ let btnStarted = document.getElementById("start");
+ btnStarted.addEventListener("click",() => {
+  location.href = "/listings"
+ });
+    </script>
